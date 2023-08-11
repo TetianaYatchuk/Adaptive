@@ -1,0 +1,65 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  font-size: $size;
+  font-weight: 600;
+  background: transparent;
+  padding: 0;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all .3s ease;
+
+  @media screen and (max-width: 890px) {
+    padding: 0 10px;
+    height: 10px;
+    margin-right: 2px;
+    font-size: 10px;
+    }
+}
+
+.btn.btn-primary {
+  background-color: $color-orange;
+  border: 1px solid $color-orange;
+  color: $color-white; 
+  padding: 0 22px;
+  height: 45px;
+}
+
+.btn.btn-primary.large {
+  height: 60px;
+  padding: 0 42px;
+
+  @media screen and (max-width: 440px) {
+    height: 40px;
+    padding: 0 20px;
+    margin-bottom: 6px;
+    }
+}
+
+.btn.btn.btn-primary.black.large {
+  padding: 0 30px;
+
+  @media screen and (max-width: 420px) {
+    height: 40px;
+    padding: 0 10px;
+    }
+}
+
+.btn.btn-primary:hover {
+  background: $color-green;
+  color: $color-black;
+}
+
+.btn.btn-primary.black {
+  background: transparent;
+  color: $color-black;
+  padding: 0 36px;
+  border: 1px solid $color-black;
+}
+
+.btn.btn-primary.black:hover {
+  background-color: $color-green;
+  color: bisque;
+}

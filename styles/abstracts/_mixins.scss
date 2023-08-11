@@ -1,0 +1,51 @@
+@mixin flexStart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@mixin respond($size) {
+  @if $size == 1440px {
+    @media screen and (max-width: 1440px) {
+      @content;
+    }
+  }
+
+    @if $size == 1400px {
+      @media screen and (max-width: 1400px) {
+        @content;
+      }
+    }
+
+      @if $size == 1220px {
+        @media screen and (max-width: 1220px) {
+          @content;
+        }
+      }
+
+      @if $size == 1300px {
+        @media screen and (max-width: 1300px) {
+          @content;
+            }
+      }
+
+      @if $size == 1100px {
+        @media screen and (max-width: 1100px) {
+          @content;
+            }
+      }
+
+      @if $size == 880px {
+        @media screen and (max-width: 880px) {
+          @content;
+            }
+      }
+
+      @if $size == 810px {
+        @media screen and (max-width: 810px) {
+          @content;
+            }
+      }
+}
+
+

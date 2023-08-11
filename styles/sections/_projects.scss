@@ -1,0 +1,115 @@
+.projects {
+  padding: 90px 0 150px 0;
+}
+
+.projects .projects-inner {
+  @include flexStart;
+}
+
+.projects .item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 250px;
+
+  @include respond(880px) {
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+}
+
+.projects .item:nth-child(even) .image {
+  order: 1;
+}
+
+.projects .item:nth-child(even) .block{
+  order: 2;
+
+  @include respond(880px) {
+  order: 1;
+  }
+}
+
+.projects .item:last-child {
+  margin-bottom: 0;
+}
+
+.projects .item:last-child .image {
+  height: 577px;
+
+  @include respond(880px) {
+    height: 300px;
+  }
+}
+
+.projects .item .block {
+  @include flexStart;
+  max-width: 494px;
+  width: 100%;
+  margin-right: 20px;
+
+  @include respond(880px) {
+    max-width: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.projects .title {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 30px;
+
+  @include respond(810px) {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+.projects .item .text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 35px;
+
+  @media screen and (max-width: 670px) {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+.projects .item .link {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px; 
+  color: inherit;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.projects .item .link:hover {
+  color: $color-green;
+}
+
+.projects .item .image {
+  max-width: 632px;
+  height: 632px;
+  object-fit: cover;
+  margin-right: 20px;
+
+  @include respond(1300px) {
+    max-width: 300px;
+    height: 300px;
+  }
+
+  @include respond(880px) {
+    max-width: none;
+    order: 2;
+    width: 100%;
+    margin: 0;
+  }
+}
