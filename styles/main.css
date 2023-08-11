@@ -418,6 +418,7 @@ html {
   .projects .item {
     flex-direction: column;
     margin-bottom: 80px;
+    padding: 0;
   }
 }
 
@@ -1043,6 +1044,7 @@ html {
 @media screen and (max-width: 1220px) {
   .navigation__inner {
     flex-direction: column;
+    padding: 92px 0 96px 0;
   }
 }
 

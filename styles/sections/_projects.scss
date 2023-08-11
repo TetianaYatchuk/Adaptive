@@ -17,6 +17,7 @@
   @include respond(880px) {
     flex-direction: column;
     margin-bottom: 80px;
+    padding: 0;
   }
 }
 
