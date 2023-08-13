@@ -3,7 +3,7 @@
   padding-bottom: 172px;
 
   @include respond(1220px) {
-    padding: 0 20px;
+    padding: 20px 0;
     }
 }
 
@@ -43,11 +43,11 @@
     margin-bottom: 30px;
     }
 
-    @include respond(810px) {
-      font-size: 36px;
-      line-height: 40px;
-      margin-bottom: 20px;
-      }
+  @include respond(810px) {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    }
 }
 
 .hero .text {

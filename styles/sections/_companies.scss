@@ -5,6 +5,10 @@
   @include respond(1400px) {
     padding: 50px 0;
   }
+
+  @include respond(1220px) {
+    padding: 20px 0;
+    }
 }
 
   .companies .companies-inner {
@@ -12,6 +16,10 @@
   flex-direction: column;
   align-items: center;
   padding: 0 20px;
+
+  @include respond(1220px) {
+    padding: 20px 0;
+    }
 }
 
 .companies .title {
@@ -28,21 +36,17 @@
     margin-bottom: 30px;
     }
 
-    @include respond(810px) {
-      font-size: 36px;
-      line-height: 40px;
-      margin-bottom: 20px;
-      }
+  @include respond(810px) {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    }
 }
 
 .companies .card-companies {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-
-  @include respond(1100px) {
-    flex-wrap: wrap;
-  }
 }
 
 .companies .image {
@@ -54,13 +58,8 @@
 
   @media screen and (max-width:560px) {
     width: calc(50% - 60px);
-    height: 60px;
+    height: 50px;
   }
-
-  // @media screen and (max-width:410px) {
-  //   width: calc(50% - 40px)
-  //   margin: 20px;
-  // }
 }
 
 .companies image:last-child {
@@ -69,8 +68,4 @@
   @include respond(1400px) {
     margin: 30px;
   }
-
-  // @media screen and (max-width:410px) {
-  //   margin: 20px;
-  // }
 }

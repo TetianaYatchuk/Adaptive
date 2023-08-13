@@ -1,5 +1,9 @@
 .projects {
   padding: 90px 0 150px 0;
+
+  @include respond(1220px) {
+    padding: 60px 0 100px 0;
+    }
 }
 
 .projects .projects-inner {

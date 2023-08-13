@@ -10,6 +10,11 @@
   display: flex;
   flex-direction: column;
   padding: 0 20px;
+
+  @include respond(1220px) {
+    width: 100%;
+    padding: 0;
+    }
 }
 
 .boost .title {
@@ -32,24 +37,34 @@
   @media screen and (max-width: 1350px) {
     flex-wrap: wrap;
   }
-
-  @include respond(1100px) {
-    flex-wrap: wrap;
-  }
 }
 
 .boost .card-list .card {
   max-width: 410px;
   width: 100%;
   margin-right: 30px;
+
+  @media screen and (max-width: 989px) {
+    max-width: none;
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 .boost .card-list .card:last-child {
   margin: 59px 0 58px 0;
+
+  @media screen and (max-width: 989px) {
+    margin: 20px 0 10px 0;
+  }
 }
 
 .boost .card-list .card .image {
   margin: 50px 0 49px 0;
+
+  @media screen and (max-width: 989px) {
+    margin: 20px 0 10px 0;
+  }
 }
 
 .boost .card-list .card .image:nth-child(2) {
@@ -61,6 +76,10 @@
   font-weight: 600;
   line-height: 40px; 
   margin-bottom: 34px;
+
+  @media screen and (max-width: 989px) {
+    margin-bottom: 16px;;
+  }
 }
 
 .boost .card-list .card .text {

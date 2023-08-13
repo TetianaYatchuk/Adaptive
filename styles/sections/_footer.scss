@@ -1,5 +1,9 @@
 .footer {
   margin: 48px 0;
+
+  @include respond(1440px) {
+    margin: 24px 0;
+  }
 }
 
 .footer__inner {
